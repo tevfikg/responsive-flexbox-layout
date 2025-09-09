@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* stack everything vertically */
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height */
+  gap: 0.8rem;
+  margin: 0.8rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3rem;
+  background-color: #1f1f1f;
+  border-radius: 2px;
+  color: #fff;
+}
+.subContainer {
+  flex: 1; /* take all remaining height */
+  display: flex;
+  gap: 0.8rem;
+}
+.sidebar {
+  flex: 1;
+  background-color: #30970e;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.hero {
+  min-height: 10rem;
+  background-color: rgb(118, 130, 107);
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  flex: 1; /* expand to fill space */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.content1,
+.content2,
+.content3 {
+  flex: 1;
+  min-height: 200px;
+  background: rgb(100, 104, 104);
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  min-height: 3rem;
+  background-color: #e24b4b;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  padding: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 762px) {
+  .subContainer {
+    flex-direction: column;
+  }
+  .sidebar {
+    min-height: 3rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .content > div {
+    flex: 100%;
+  }
+  .content1,
+  .content2,
+  .content3 {
+    min-height: 170px;
+  }
+}
