@@ -8,12 +8,12 @@ body {
   background: #f0f0f0;
   font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column; /* stack everything vertically */
+  flex-direction: column; 
 }
 .main-section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* full height */
+  min-height: 100vh; 
   gap: 0.8rem;
   margin: 0.8rem;
 }
@@ -27,7 +27,7 @@ body {
   color: #fff;
 }
 .subContainer {
-  flex: 1; /* take all remaining height */
+  flex: 1; 
   display: flex;
   gap: 0.8rem;
 }
@@ -56,7 +56,7 @@ body {
   align-items: center;
 }
 .content {
-  flex: 1; /* expand to fill space */
+  flex: 1; 
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
